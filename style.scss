@@ -37,6 +37,7 @@ ul {
     padding-bottom: 5px;
   }
 }
+
 .img-1 {
   img {
     width: 100%;
@@ -75,8 +76,37 @@ section {
     align-items: center;
     text-align: center;
   }
-  a {
+  a:not(.prev):not(.next) {
+    color: #547671;
     padding: 0.5em;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+      border-bottom: 3px solid #547671;
+      border-radius: 1em;
+      bottom: 0.3em;
+      transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    &:before {
+      width: 1em;
+      transform-origin: right;
+    }
+    &:after {
+      width: 100%;
+      left: 1em;
+      transform: translateX(-120%);
+    }
+    &:hover::before {
+      transform: scaleX(1);
+    }
+    &:hover:after {
+      transform: translateX(0);
+    }
   }
 }
 

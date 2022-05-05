@@ -102,8 +102,49 @@ section .work-links {
   text-align: center;
 }
 
-section a {
+section a:not(.prev):not(.next) {
+  color: #547671;
   padding: 0.5em;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+section a:not(.prev):not(.next):before, section a:not(.prev):not(.next):after {
+  position: absolute;
+  content: "";
+  border-bottom: 3px solid #547671;
+  border-radius: 1em;
+  bottom: 0.3em;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+section a:not(.prev):not(.next):before {
+  width: 1em;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+section a:not(.prev):not(.next):after {
+  width: 100%;
+  left: 1em;
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
+}
+
+section a:not(.prev):not(.next):hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+section a:not(.prev):not(.next):hover:after {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 section:nth-child(2n + 1) {
