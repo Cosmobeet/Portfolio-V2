@@ -8,6 +8,7 @@ body {
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 4em;
+  padding-bottom: 0.2em;
 }
 h2 {
   padding-top: 1em;
@@ -17,6 +18,7 @@ h2 {
 }
 h3 {
   font-size: 2em;
+  padding-bottom: 0.2em;
 }
 h4 {
   font-family: "Roboto", sans-serif;
@@ -105,6 +107,18 @@ section {
       transform: translateX(0);
     }
   }
+}
+
+#contact {
+  h3 {
+    text-align: center;
+  }
+  .myEmail {
+    background-color: gray;
+    padding: 0.2em;
+    border-radius: 4px;
+  }
+  padding-bottom: 8em;
 }
 
 // --- SlideShow CSS ---
@@ -215,7 +229,6 @@ section {
   .about-skills {
     width: 40%;
   }
-
   .wrapper {
     display: flex;
     flex: row;
@@ -226,5 +239,8 @@ section {
     align-items: center;
     padding: 50px 50px;
     width: 60%;
+  }
+  .container {
+    width: 70%;
   }
 }

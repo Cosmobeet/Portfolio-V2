@@ -10,6 +10,7 @@ body {
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 4em;
+  padding-bottom: 0.2em;
 }
 
 h2 {
@@ -21,6 +22,7 @@ h2 {
 
 h3 {
   font-size: 2em;
+  padding-bottom: 0.2em;
 }
 
 h4 {
@@ -147,6 +149,20 @@ section a:not(.prev):not(.next):hover::before {
 section a:not(.prev):not(.next):hover:after {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+#contact {
+  padding-bottom: 8em;
+}
+
+#contact h3 {
+  text-align: center;
+}
+
+#contact .myEmail {
+  background-color: gray;
+  padding: 0.2em;
+  border-radius: 4px;
 }
 
 /* Slideshow container */
@@ -286,6 +302,9 @@ section a:not(.prev):not(.next):hover:after {
             align-items: center;
     padding: 50px 50px;
     width: 60%;
+  }
+  .container {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=style.css.map */

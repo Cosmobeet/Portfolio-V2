@@ -73,8 +73,8 @@
       <div>
         <h1>Hugo Tran</h1>
         <h3>Front-End Web Developer</h3>
-        <a href="#">Check Out My Work</a>
-        <a href="#">Contact Me</a>
+        <a href="#projects">My Work</a>
+        <a href="#contact">Contact Me</a>
       </div>
     </section>
 
@@ -268,7 +268,35 @@
     <section id="blog"></section>
 
     <!-- --- Contact --- -->
-    <section id="contact"></section>
+    <section id="contact">
+      <div class="container mt-5">
+        <form
+          class="bg-light"
+          style="padding: 30px"
+          action="https://formsubmit.co/9f27646258b348c9123d1f7259e83caf"
+          method="POST"
+        >
+          <h3>Contact Me</h3>
+          <label>Name</label>
+          <input type="text" name="name" class="form-control" required />
+          <label>Email address</label>
+          <input type="email" name="email" class="form-control" required />
+          <!-- <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          > -->
+          <label>Message</label>
+          <textarea
+            class="form-control"
+            name="message"
+            rows="3"
+            required
+          ></textarea>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <h3>Or Contact Me At:</h3>
+          <h3><span class="myEmail">htdev@hugo-tran.com</span></h3>
+        </form>
+      </div>
+    </section>
 
     <!-- --- Slideshow Script --- -->
     <script>
