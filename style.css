@@ -3,6 +3,10 @@
   font-family: "Josefin Sans", "sans-serif";
 }
 
+body {
+  padding-top: 50px;
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 4em;
@@ -32,11 +36,6 @@ h6 {
 
 p {
   text-align: center;
-  /* color: white; */
-}
-
-body {
-  padding-top: 50px;
 }
 
 ul {
@@ -45,15 +44,8 @@ ul {
 }
 
 ul li {
-  padding-bottom: 5px;
-}
-
-.img-1 img {
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 10px;
-  border-radius: 20px;
+  padding: 0.4em;
+  padding-left: 2em;
 }
 
 .tech-list {
@@ -65,7 +57,7 @@ ul li {
   display: inline;
 }
 
-.home {
+#home {
   width: 100vw;
   height: 100vh;
   color: white;
@@ -106,6 +98,10 @@ section .work-links {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+section:nth-child(2n + 1) {
+  background-color: #f9f9f9;
 }
 
 section a:not(.prev):not(.next) {
@@ -151,10 +147,6 @@ section a:not(.prev):not(.next):hover::before {
 section a:not(.prev):not(.next):hover:after {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-}
-
-section:nth-child(2n + 1) {
-  background-color: #f9f9f9;
 }
 
 /* Slideshow container */
