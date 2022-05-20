@@ -224,6 +224,27 @@ section {
   }
 }
 
+/* --- Footer --- */
+footer {
+  position: bottom;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 8px;
+
+  .socials a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+  }
+  .socials a:hover {
+    color: grey;
+  }
+}
+
 // --- Responsive Changes (Mobile to Tablet/Desktop) ---
 @media (min-width: 500px) {
   .about-skills {
