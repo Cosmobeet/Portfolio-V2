@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo&family=Josefin+Sans:wght@300;400&family=Lato&family=Maven+Pro&family=Montserrat&family=Oxygen:wght@300;400&family=Prosto+One&family=Radio+Canada&family=Roboto:wght@300&display=swap");
+* {
+  font-family: "Josefin Sans", "sans-serif";
+}
+body {
+  padding-top: 70px;
+}
+article {
+  margin-top: 2rem;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+h1,
+h2,
+h3,
+p {
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-size: 2rem;
+  text-decoration: underline;
+  margin-top: 1rem;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+p {
+  font-size: 1rem;
+  line-height: 2;
+}
+time {
+  line-height: 2.5;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+ul li {
+  padding-bottom: 5px;
+  padding: 0.4em;
+  padding-left: 2em;
+}
+.card:hover {
+  background-color: lightslategray;
+}
