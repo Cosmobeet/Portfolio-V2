@@ -3,10 +3,10 @@
   font-family: "Josefin Sans", "sans-serif";
 }
 body {
-  padding-top: 40px;
+  padding-top: 4rem;
 }
 article {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -18,9 +18,10 @@ p {
   font-family: "Roboto", sans-serif;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-decoration: underline;
   margin-top: 1rem;
+  text-align: center;
 }
 h2 {
   font-size: 1.5rem;
