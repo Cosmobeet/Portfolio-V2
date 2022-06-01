@@ -62,7 +62,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto order-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="true" href="#home"
+              <a class="nav-link" aria-current="true" href="/"
                 >Home <span class="sr-only"></span
               ></a>
             </li>
@@ -73,7 +73,7 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/blog/index.html">Blog</a>
+              <a class="nav-link" href="/blog/">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#bottom">Contact</a>
@@ -86,11 +86,11 @@
 
   <body>
     <!-- --- Home Section // Front Page --- -->
-    <section id="home">
+    <section id="home" class="animated-link">
       <div>
         <h1>Hugo Tran</h1>
         <h3>Front-End Web Developer</h3>
-        <a href="#projects">My Work</a>
+        <a class="link" href="#projects">My Work</a>
         <a href="#contact">Contact Me</a>
         <a href="assets/HugoTran-CV.pdf">Resume</a>
       </div>
@@ -139,7 +139,7 @@
     </section>
 
     <!-- --- Project Page 1 --- -->
-    <section id="projects">
+    <section id="projects" class="animated-link">
       <h2>Projects</h2>
       <h4>The Martian Project</h4>
 
@@ -200,7 +200,7 @@
     </section>
 
     <!-- --- Project Page 2 --- -->
-    <section>
+    <section class="animated-link">
       <h4>Javascript Login</h4>
 
       <div class="slideshow-container">
@@ -251,7 +251,7 @@
     </section>
 
     <!-- --- Project Page 3 --- -->
-    <section>
+    <section class="animated-link">
       <h4>Github API</h4>
 
       <div class="slideshow-container">
@@ -294,8 +294,50 @@
       </div>
     </section>
 
-    <!-- --- Blog --- -->
-    <section id="blog"></section>
+    <!-- --- Project Page Final --- -->
+    <section>
+      <h4>More Projects</h4>
+      <table class="table project-table">
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Technologies</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>404 Page</td>
+          <td>Html5, Css3</td>
+          <td>
+            <a href="https://hugo-tran.com/error">Live</a>
+            <a href="https://github.com/HowToDuck/404-Page">Code</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Simple-Roast eCommerce</td>
+          <td>WordPress, WooCommerce</td>
+          <td>
+            <a href="https://hugo-tran.com/simple-roast">Live</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Herbpedia</td>
+          <td>HTML5, CSS3</td>
+          <td>
+            <a href="https://hugo-tran.com/projects/herbpedia">Live</a>
+            <a href="https://github.com/HowToDuck/Herbpedia">Code</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Angular CRUD</td>
+          <td>Angular, Firebase</td>
+          <td>N/A</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- --- Blog ---
+    <section id="blog"></section> -->
 
     <!-- --- Contact --- -->
     <section id="contact">
@@ -369,18 +411,16 @@
   </body>
   <!-- --- Footer --- -->
   <footer id="bottom">
-    <div class="col">
-      <div class="socials">
-        <a href="https://github.com/HowToDuck"
-          ><i class="fa fa-github fa-2x"></i
-        ></a>
-        <a href="https://www.linkedin.com/"
-          ><i class="fa fa-linkedin fa-2x"></i
-        ></a>
-        <a href="https://codepen.io/HowToDuck"
-          ><i class="fa fa-codepen fa-2x"></i
-        ></a>
-      </div>
+    <!-- <div class="col"> -->
+    <div class="socials">
+      <a href="https://github.com/HowToDuck"
+        ><i class="fa fa-github fa-2x"></i
+      ></a>
+      <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+      <a href="https://codepen.io/HowToDuck"
+        ><i class="fa fa-codepen fa-2x"></i
+      ></a>
     </div>
+    <!-- </div> -->
   </footer>
 </html>

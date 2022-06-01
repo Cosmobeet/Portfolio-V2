@@ -82,7 +82,7 @@ ul li {
 }
 
 section {
-  border-bottom: 1px solid #ddd9d9;
+  border-top: 1px solid #ddd9d9;
 }
 
 section .work-links {
@@ -106,7 +106,17 @@ section:nth-child(2n + 1) {
   background-color: #f9f9f9;
 }
 
-section a:not(.prev):not(.next) {
+section table {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 100%;
+}
+
+section table a {
+  color: blue;
+}
+
+.animated-link a:not(.prev):not(.next) {
   color: #547671;
   padding: 0.5em;
   text-decoration: none;
@@ -116,8 +126,8 @@ section a:not(.prev):not(.next) {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-section a:not(.prev):not(.next):before,
-section a:not(.prev):not(.next):after {
+.animated-link a:not(.prev):not(.next):before,
+.animated-link a:not(.prev):not(.next):after {
   position: absolute;
   content: "";
   border-bottom: 3px solid #547671;
@@ -130,25 +140,25 @@ section a:not(.prev):not(.next):after {
     -webkit-transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-section a:not(.prev):not(.next):before {
+.animated-link a:not(.prev):not(.next):before {
   width: 1em;
   -webkit-transform-origin: right;
   transform-origin: right;
 }
 
-section a:not(.prev):not(.next):after {
+.animated-link a:not(.prev):not(.next):after {
   width: 100%;
   left: 1em;
   -webkit-transform: translateX(-120%);
   transform: translateX(-120%);
 }
 
-section a:not(.prev):not(.next):hover::before {
+.animated-link a:not(.prev):not(.next):hover::before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
-section a:not(.prev):not(.next):hover:after {
+.animated-link a:not(.prev):not(.next):hover:after {
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
@@ -284,24 +294,26 @@ section a:not(.prev):not(.next):hover:after {
 
 /* --- Footer --- */
 footer {
-  position: bottom;
+  position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: white;
-  text-align: center;
-  font-size: 16px;
+  text-align: left;
+  font-size: 12px;
   padding: 8px;
 }
 
+footer .socials {
+  margin-left: 2rem;
+}
+
 footer .socials a {
-  padding-left: 10px;
-  padding-right: 10px;
-  color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: #39395f;
 }
 
 footer .socials a:hover {
-  color: grey;
+  color: #051726;
 }
 
 @media (min-width: 500px) {
