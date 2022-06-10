@@ -2,6 +2,10 @@
 * {
   font-family: "Josefin Sans", "sans-serif";
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
 body {
   padding-top: 50px;
 }
@@ -64,6 +68,7 @@ ul {
   align-items: center;
 }
 section {
+  padding: 2rem 0;
   border-top: 1px solid rgb(221, 217, 217);
   .work-links {
     display: flex;
@@ -239,22 +244,26 @@ section {
 
 /* --- Footer --- */
 footer {
+  // background-color: white;
   position: fixed;
   bottom: 0;
   width: 100%;
   // background-color: rgba(0, 0, 0, 0.9);
   // color: white;
   text-align: left;
-  font-size: 12px;
+  font-size: 13px;
   padding: 8px;
   .socials {
     margin-left: 2rem;
     a {
+      background-color: white;
+      border-radius: 35%;
       padding-left: 0.5rem;
       padding-right: 0.5rem;
+      padding-top: 1rem;
+      padding-bottom: 0.2rem;
       color: #39395f;
       // color: #428a7f;
-
       &:hover {
         color: #051726;
       }
