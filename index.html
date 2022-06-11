@@ -62,9 +62,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto order-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="true" href="/"
-                >Home <span class="sr-only"></span
-              ></a>
+              <a class="nav-link active" href="/">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -73,10 +71,10 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/blog/">Blog</a>
+              <a class="nav-link" href="#bottom">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#bottom">Contact</a>
+              <a class="nav-link" href="/blog/">Blog</a>
             </li>
           </ul>
         </div>
@@ -109,7 +107,6 @@
             working becoming more fluent with JavaScript and learning design.
           </p>
         </div>
-
         <div class="about-skills">
           <h4>Technologies</h4>
           <div class="row">
@@ -303,12 +300,14 @@
       <table class="table project-table">
         <thead>
           <tr>
+            <th>#</th>
             <th>Project</th>
             <th>Technologies</th>
             <th>Link</th>
           </tr>
         </thead>
         <tr>
+          <td>1</td>
           <td>Herbpedia</td>
           <td>HTML5, CSS3</td>
           <td>
@@ -317,6 +316,7 @@
           </td>
         </tr>
         <tr>
+          <td>2</td>
           <td>404 Page</td>
           <td>HTML5, CSS3</td>
           <td>
@@ -325,6 +325,7 @@
           </td>
         </tr>
         <tr>
+          <td>3</td>
           <td>Simple-Roast eCommerce</td>
           <td>WordPress, WooCommerce</td>
           <td>
@@ -332,6 +333,7 @@
           </td>
         </tr>
         <tr>
+          <td>4</td>
           <td>Angular CRUD</td>
           <td>Angular, Firebase</td>
           <td>
@@ -345,38 +347,72 @@
     <!-- --- Blog ---
     <section id="blog"></section> -->
 
-    <!-- --- Contact --- -->
-    <section id="contact">
-      <div class="container mt-5">
-        <form
-          class="bg-light"
-          style="padding: 30px"
-          action="https://formsubmit.co/9f27646258b348c9123d1f7259e83caf"
-          method="POST"
-        >
-          <h3>Contact Me</h3>
-          <label>Name</label>
-          <input type="text" name="name" class="form-control" required />
-          <label>Email address</label>
-          <input type="email" name="email" class="form-control" required />
-          <!-- <small id="emailHelp" class="form-text text-muted"
-            >We'll never share your email with anyone else.</small
-          > -->
-          <label>Message</label>
-          <textarea
-            class="form-control"
-            name="message"
-            rows="3"
-            required
-          ></textarea>
-          <button type="submit" class="btn btn-primary">Submit</button>
-          <h3>Or Email Me At:</h3>
-          <h3><span class="myEmail">htdev@hugo-tran.com</span></h3>
-        </form>
+    <section>
+      <h2>Contact</h2>
+      <h4>
+        Leave me a message below or email me directly at
+        <a href="mailto:htdev@hugo-tran.com">htdev@hugo-tran.com</a>
+      </h4>
+      <div class="container-lg">
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6 justify-content-center">
+            <form
+              action="https://formsubmit.co/9f27646258b348c9123d1f7259e83caf"
+              method="post"
+            >
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder=""
+                />
+                <label for="name">Name</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder=""
+                />
+                <label for="email">Email</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <textarea
+                  id="message"
+                  class="form-control"
+                  placeholder=""
+                  style="height: 200px"
+                ></textarea>
+                <label for="message">Message</label>
+              </div>
+
+              <div class="mb-4 text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
 
     <div id="bottom"></div>
+
+    <!-- --- Footer --- -->
+    <footer>
+      <div class="socials">
+        <a href="https://github.com/HowToDuck"
+          ><i class="fa fa-github fa-2x"></i
+        ></a>
+        <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+        <a href="https://codepen.io/HowToDuck"
+          ><i class="fa fa-codepen fa-2x"></i
+        ></a>
+      </div>
+    </footer>
 
     <!-- --- Slideshow Script --- -->
     <script>
@@ -417,16 +453,4 @@
       crossorigin="anonymous"
     ></script>
   </body>
-  <!-- --- Footer --- -->
-  <footer>
-    <div class="socials">
-      <a href="https://github.com/HowToDuck"
-        ><i class="fa fa-github fa-2x"></i
-      ></a>
-      <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
-      <a href="https://codepen.io/HowToDuck"
-        ><i class="fa fa-codepen fa-2x"></i
-      ></a>
-    </div>
-  </footer>
 </html>

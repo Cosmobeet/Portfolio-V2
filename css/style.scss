@@ -54,7 +54,6 @@ ul {
   }
 }
 #home {
-  width: 100vw;
   height: 100vh;
   color: white;
 
@@ -83,12 +82,18 @@ section {
   }
 
   table {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    // background-color: orange;
-    width: 100%;
+    box-sizing: content-box;
+    // margin-left: 1rem;
+    // margin-right: 1rem;
+    // width: 100%;
     a {
       color: blue;
+    }
+    tr,
+    td {
+      // text-align: center;
+      margin-left: 2rem;
+      padding-left: 100px;
     }
   }
 }
@@ -127,18 +132,6 @@ section {
   }
 }
 
-#contact {
-  h3 {
-    text-align: center;
-  }
-  .myEmail {
-    background-color: gray;
-    padding: 0.2em;
-    border-radius: 4px;
-  }
-  padding-bottom: 8em;
-}
-
 // --- SlideShow CSS ---
 // * {
 //   box-sizing: border-box;
@@ -153,6 +146,23 @@ section {
   img {
     width: 100%;
     border-radius: 5px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #717171;
   }
 }
 
@@ -210,23 +220,6 @@ section {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -244,12 +237,9 @@ section {
 
 /* --- Footer --- */
 footer {
-  // background-color: white;
   position: fixed;
   bottom: 0;
   width: 100%;
-  // background-color: rgba(0, 0, 0, 0.9);
-  // color: white;
   text-align: left;
   font-size: 13px;
   padding: 8px;
@@ -273,21 +263,18 @@ footer {
 
 // --- Responsive Changes (Mobile to Tablet/Desktop) ---
 @media (min-width: 500px) {
-  .about-skills {
-    width: 40%;
-  }
   .wrapper {
     display: flex;
     flex: row;
   }
   .about-text {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding: 50px 50px;
+    box-sizing: content-box;
     width: 60%;
+    p {
+      padding: 2% 8%;
+    }
   }
-  .container {
-    width: 70%;
+  .about-skills {
+    width: 39%;
   }
 }
