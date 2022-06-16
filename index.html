@@ -201,23 +201,41 @@
 
     <!-- --- Project Page 2 --- -->
     <section class="animated-link">
-      <h4>Javascript Login</h4>
+      <h4>Simple-Roast WordPress</h4>
 
       <div class="slideshow-container">
         <div class="mySlides2">
           <div class="numbertext">1 / 2</div>
           <img
-            src="assets/LG-1.PNG"
-            alt="Screenshot 1 of Javascript project"
+            src="assets/SR-1.PNG"
+            alt="Screenshot 1 of WordPress site"
             style="width: 100%"
           />
           <!-- <div class="text">Caption</div> -->
         </div>
         <div class="mySlides2">
-          <div class="numbertext">2 / 2</div>
+          <div class="numbertext">2 / 4</div>
           <img
-            src="assets/LG-2.PNG"
-            alt="Screenshot 2 of Javascript project, showing login and human verification"
+            src="assets/SR-2.png"
+            alt="Screenshot 2 of WordPress site"
+            style="width: 100%"
+          />
+          <!-- <div class="text">Caption</div> -->
+        </div>
+        <div class="mySlides2">
+          <div class="numbertext">3 / 4</div>
+          <img
+            src="assets/SR-3.png"
+            alt="Screenshot 3 of WordPress site"
+            style="width: 100%"
+          />
+          <!-- <div class="text">Caption</div> -->
+        </div>
+        <div class="mySlides2">
+          <div class="numbertext">4 / 4</div>
+          <img
+            src="assets/SR-4.png"
+            alt="Screenshot 4 of WordPress site"
             style="width: 100%"
           />
           <!-- <div class="text">Caption</div> -->
@@ -231,21 +249,16 @@
         <span class="dot" onclick="currentSlide(2)"></span>
       </div> -->
       <div>
-        <p>
-          A Project using JavaScript to create local and session storage, and
-          assess human verification.
-        </p>
+        <p>An eCommerce project built with WordPress and WooCommerce.</p>
         <div class="work-links">
-          <a href="https://hugo-tran.com/projects/login/"
+          <a href="https://hugo-tran.com/simple-roast"
             ><i class="fa fa-laptop"></i> See Live</a
-          >
-          <a href="https://github.com/HowToDuck/Javascript-login"
-            ><i class="fa fa-github"></i> Check Code</a
           >
         </div>
 
         <ul class="tech-list">
-          <li>Javascript</li>
+          <li>WordPress</li>
+          <li>WooCommerce</li>
         </ul>
       </div>
     </section>
@@ -257,12 +270,12 @@
       <div class="slideshow-container">
         <div class="mySlides3">
           <div class="numbertext">1 / 2</div>
-          <img src="assets/SS1.PNG" alt="" />
+          <img src="assets/RG-1.PNG" alt="Screenshot 1 of React project" />
           <div class="text">Example using my Github profile</div>
         </div>
         <div class="mySlides3">
           <div class="numbertext">2 / 2</div>
-          <img src="assets/SS2.PNG" alt="" />
+          <img src="assets/RG-2.PNG" alt="Screenshot 2 of React project" />
           <div class="text">Example using Github user emilk's profile</div>
         </div>
         <a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
@@ -279,7 +292,7 @@
           users with the Github API.
         </p>
         <div class="work-links">
-          <a href="https://voluble-quokka-a90277.netlify.app/"
+          <a href="prismatic-shortbread-903a1e.netlify.app"
             ><i class="fa fa-laptop"></i> See Live</a
           >
           <a href="https://github.com/HowToDuck/Github-profile-API"
@@ -326,10 +339,11 @@
         </tr>
         <tr>
           <td>3</td>
-          <td>Simple-Roast eCommerce</td>
-          <td>WordPress, WooCommerce</td>
+          <td>JavaScript Login</td>
+          <td>JavaScript</td>
           <td>
-            <a href="https://hugo-tran.com/simple-roast">Live</a>
+            <a href="https://hugo-tran.com/projects/login/">Live</a>
+            <a href="https://github.com/HowToDuck/Javascript-login">Code</a>
           </td>
         </tr>
         <tr>
@@ -347,6 +361,7 @@
     <!-- --- Blog ---
     <section id="blog"></section> -->
 
+    <!-- --- Contact Form --- -->
     <section>
       <h2>Contact</h2>
       <h4>
@@ -365,7 +380,8 @@
                   type="text"
                   class="form-control"
                   id="name"
-                  placeholder=""
+                  name="name"
+                  placeholder="Name"
                 />
                 <label for="name">Name</label>
               </div>
@@ -375,7 +391,8 @@
                   type="email"
                   class="form-control"
                   id="email"
-                  placeholder=""
+                  name="email"
+                  placeholder="Email"
                 />
                 <label for="email">Email</label>
               </div>
@@ -383,8 +400,9 @@
               <div class="form-floating mb-3">
                 <textarea
                   id="message"
+                  name="message"
                   class="form-control"
-                  placeholder=""
+                  placeholder="Message"
                   style="height: 200px"
                 ></textarea>
                 <label for="message">Message</label>
