@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hugo Tran: Portfolio</title>
+    <title>Hugo Tran - Portfolio</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -39,11 +39,11 @@
   </head>
 
   <header>
-    <!-- Navigation bar -->
+    <!-- --- Navigation bar --- -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
         <div class="me-auto">
-          <a class="navbar-brand" href="#">Hugo Tran</a>
+          <a class="navbar-brand" href="/">Hugo Tran</a>
         </div>
         <div class="ms-auto">
           <button
@@ -71,7 +71,7 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#bottom">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/blog/">Blog</a>
@@ -83,28 +83,29 @@
   </header>
 
   <body>
-    <!-- --- Home Section // Front Page --- -->
+    <!-- Home Section & Hero Image -->
     <section id="home" class="animated-link">
       <div>
         <h1>Hugo Tran</h1>
         <h3>Front-End Web Developer</h3>
         <a class="link" href="#projects">My Work</a>
         <a href="#contact">Contact Me</a>
-        <a href="assets/HugoTran-CV.pdf">Resume</a>
+        <a href="#">Resume</a>
       </div>
     </section>
 
-    <!-- --- About Section --- -->
+    <!-- About Section -->
     <section id="about">
       <h2>About Me</h2>
       <div class="wrapper">
         <div class="about-text">
           <h4>Bio</h4>
           <p>
-            Hey there! My name is Hugo Tran, i'm a Front End Developer. I build
-            things using html, css, and javascript. I enjoy challenging myself
-            and love watching projects progress and evolve. Recently i've been
-            working becoming more fluent with JavaScript and learning design.
+            Hey there! My name is Hugo, i'm a Frontend Developer based in San
+            Diego. I build things using html, css, and javascript. I enjoy
+            challenging myself and love watching projects progress and evolve.
+            Recently i've been working on personal projects and aws
+            certification.
           </p>
         </div>
         <div class="about-skills">
@@ -138,7 +139,7 @@
       </div>
     </section>
 
-    <!-- --- Project Page 1 --- -->
+    <!-- Project Page 1 -->
     <section id="projects" class="animated-link">
       <h2>Projects</h2>
       <h4>The Martian Project</h4>
@@ -180,8 +181,8 @@
       </div> -->
       <div>
         <p>
-          A project mainly using only HTML5 and CSS3, focused on animations and
-          responsive design.
+          A project mainly using only HTML5 and CSS3, layout, responsive design,
+          and animation.
         </p>
         <div class="work-links">
           <a href="https://hugo-tran.com/projects/The-Martian-Project/"
@@ -199,15 +200,15 @@
       </div>
     </section>
 
-    <!-- --- Project Page 2 --- -->
+    <!-- Project Page 2 -->
     <section class="animated-link">
       <h4>Simple-Roast WordPress</h4>
 
       <div class="slideshow-container">
         <div class="mySlides2">
-          <div class="numbertext">1 / 2</div>
+          <div class="numbertext">1 / 4</div>
           <img
-            src="assets/SR-1.PNG"
+            src="assets/SR-1.png"
             alt="Screenshot 1 of WordPress site"
             style="width: 100%"
           />
@@ -263,19 +264,19 @@
       </div>
     </section>
 
-    <!-- --- Project Page 3 --- -->
+    <!-- Project Page 3 -->
     <section class="animated-link">
-      <h4>Github API</h4>
+      <h4>React App - Github API</h4>
 
       <div class="slideshow-container">
         <div class="mySlides3">
           <div class="numbertext">1 / 2</div>
-          <img src="assets/RG-1.PNG" alt="Screenshot 1 of React project" />
+          <img src="assets/RG-1.png" alt="Screenshot 1 of React project" />
           <div class="text">Example using my Github profile</div>
         </div>
         <div class="mySlides3">
           <div class="numbertext">2 / 2</div>
-          <img src="assets/RG-2.PNG" alt="Screenshot 2 of React project" />
+          <img src="assets/RG-2.png" alt="Screenshot 2 of React project" />
           <div class="text">Example using Github user emilk's profile</div>
         </div>
         <a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
@@ -292,10 +293,10 @@
           users with the Github API.
         </p>
         <div class="work-links">
-          <a href="prismatic-shortbread-903a1e.netlify.app"
+          <a href="https://prismatic-shortbread-903a1e.netlify.app"
             ><i class="fa fa-laptop"></i> See Live</a
           >
-          <a href="https://github.com/HowToDuck/Github-profile-API"
+          <a href="https://github.com/HowToDuck/github-api"
             ><i class="fa fa-github"></i> Check Code</a
           >
         </div>
@@ -307,7 +308,7 @@
       </div>
     </section>
 
-    <!-- --- Project Page Final --- -->
+    <!-- Project Page Table -->
     <section>
       <h4>More Projects</h4>
       <table class="table project-table">
@@ -358,11 +359,11 @@
       </table>
     </section>
 
-    <!-- --- Blog ---
-    <section id="blog"></section> -->
+    <!-- Blog -->
+    <!-- <section id="blog"></section> -->
 
-    <!-- --- Contact Form --- -->
-    <section>
+    <!-- Contact Form -->
+    <section id="contact">
       <h2>Contact</h2>
       <h4>
         Leave me a message below or email me directly at
@@ -417,9 +418,7 @@
       </div>
     </section>
 
-    <div id="bottom"></div>
-
-    <!-- --- Footer --- -->
+    <!-- Footer -->
     <footer>
       <div class="socials">
         <a href="https://github.com/HowToDuck"
@@ -432,7 +431,7 @@
       </div>
     </footer>
 
-    <!-- --- Slideshow Script --- -->
+    <!-- Slideshow Script -->
     <script>
       let slideIndex = [1, 1, 1];
       /* Class the members of each slideshow group with different CSS classes */
@@ -461,7 +460,7 @@
       }
     </script>
 
-    <!-- --- Fontawesome Script ---  -->
+    <!-- Fontawesome Script -->
     <script src="https://use.fontawesome.com/04df6fe8c5.js"></script>
 
     <!-- Bootstrap Script -->
