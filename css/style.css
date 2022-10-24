@@ -8,6 +8,10 @@ html {
   scroll-padding-top: 2rem;
 }
 
+.navbar {
+  padding-top: 0.5em;
+}
+
 .navbar-toggler {
   background-color: #393a3a !important;
 }
@@ -19,7 +23,7 @@ h1 {
 }
 
 h2 {
-  padding-top: 1em;
+  padding: 2rem 0;
   padding-left: 2em;
   padding-bottom: 0.2em;
   text-decoration: underline;
@@ -86,10 +90,6 @@ ul li {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-}
-
-section {
-  padding: 2rem 0;
 }
 
 section:not(:first-of-type) {

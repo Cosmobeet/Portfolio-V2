@@ -2,8 +2,18 @@
 * {
   font-family: "Josefin Sans", "sans-serif";
 }
+.navbar {
+  padding-top: 0.5em;
+}
+.navbar-toggler {
+  background-color: rgb(182, 181, 181) !important;
+}
+.navbar ul {
+  background-color: rgb(182, 181, 181);
+  border-radius: 2em;
+}
 body {
-  margin-top: 50px;
+  margin-top: 6.5em;
 }
 article {
   margin-top: 2rem;

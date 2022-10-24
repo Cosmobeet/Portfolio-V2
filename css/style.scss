@@ -6,15 +6,14 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
 }
-// body {
-//   padding-top: 50px;
-// }
 // .nav-link {
 //   color: #547671 !important;
-//   font-weight: 580;
-//   font-size: 1.1em;
+// font-weight: 580;
+// font-size: 1.1em;
 // }
-
+.navbar {
+  padding-top: 0.5em;
+}
 .navbar-toggler {
   background-color: rgb(57, 58, 58) !important;
 }
@@ -24,7 +23,7 @@ h1 {
   padding-bottom: 0.2em;
 }
 h2 {
-  padding-top: 1em;
+  padding: 2rem 0;
   padding-left: 2em;
   padding-bottom: 0.2em;
   text-decoration: underline;
@@ -71,20 +70,10 @@ ul {
   background-size: cover;
   background-blend-mode: darken;
 
-  // .home-contents {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
-
   .home-contents {
-    // background-color: red;
     display: flex;
     flex-direction: column;
     height: 70vh;
-
-    // width: 1000px;
     justify-content: center;
     // align-items: center;
     text-align: center;
@@ -92,7 +81,6 @@ ul {
   // margin: auto;
 }
 section {
-  padding: 2rem 0;
   &:not(:first-of-type) {
     border-bottom: 1px solid rgb(221, 217, 217);
   }
@@ -158,6 +146,9 @@ section {
     }
   }
 }
+// #home {
+//   padding-top: 0.5em;
+// }
 
 // --- SlideShow CSS ---
 // * {
