@@ -8,8 +8,8 @@ html {
   scroll-padding-top: 2rem;
 }
 
-body {
-  padding-top: 50px;
+.navbar-toggler {
+  background-color: #393a3a !important;
 }
 
 h1 {
@@ -71,6 +71,9 @@ ul li {
   background: rgba(0, 0, 0, 0.7) url(../assets/kb-bg.jpg);
   background-size: cover;
   background-blend-mode: darken;
+}
+
+#home .home-contents {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,17 +81,19 @@ ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 70vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
 }
 
 section {
   padding: 2rem 0;
-  border-top: 1px solid #ddd9d9;
+}
+
+section:not(:first-of-type) {
+  border-bottom: 1px solid #ddd9d9;
 }
 
 section .work-links {
@@ -150,16 +155,16 @@ section table td {
 }
 
 .animated-link a:not(.prev):not(.next):before {
-  width: 1em;
+  width: 1.5em;
   -webkit-transform-origin: right;
           transform-origin: right;
 }
 
 .animated-link a:not(.prev):not(.next):after {
   width: 100%;
-  left: 1em;
-  -webkit-transform: translateX(-120%);
-          transform: translateX(-120%);
+  left: 0.1em;
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
 }
 
 .animated-link a:not(.prev):not(.next):hover::before {
