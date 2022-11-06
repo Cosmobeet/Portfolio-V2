@@ -92,6 +92,12 @@ ul li {
   text-align: center;
 }
 
+#home .blurred {
+  -webkit-backdrop-filter: blur(60px);
+          backdrop-filter: blur(60px);
+  padding: 4em;
+}
+
 section:not(:first-of-type) {
   border-bottom: 1px solid #ddd9d9;
 }

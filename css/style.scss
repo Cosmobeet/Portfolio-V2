@@ -78,6 +78,10 @@ ul {
     // align-items: center;
     text-align: center;
   }
+  .blurred {
+    backdrop-filter: blur(60px);
+    padding: 4em;
+  }
   // margin: auto;
 }
 section {
