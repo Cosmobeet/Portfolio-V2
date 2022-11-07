@@ -267,20 +267,44 @@ footer {
   width: 100%;
   text-align: left;
   font-size: 13px;
-  padding: 8px;
+  padding: 1em;
+  .link-name {
+    display: none;
+    text-decoration: none;
+    padding: 5em;
+  }
   .socials {
-    margin-left: 2rem;
+    // margin-left: 2rem;
+    padding: 0 0 0.6em 0.6em;
     a {
       background-color: white;
       border-radius: 35%;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-      padding-top: 1rem;
-      padding-bottom: 0.2rem;
       color: #39395f;
-      // color: #428a7f;
+      padding: 1em 0.5em 0.2em 0.5em;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
       &:hover {
-        color: #051726;
+        background-color: black;
+        border-radius: 10px;
+        color: #547671;
+        .link-name {
+          color: white;
+          display: inline;
+          padding: 1.5em;
+          text-align: center;
+        }
+        &:nth-child(1) {
+          background-color: black;
+          color: white;
+        }
+        &:nth-child(2) {
+          background-color: #0a66c2;
+          color: white;
+        }
+        &:nth-child(3) {
+          background-color: black;
+          color: white;
+        }
       }
     }
   }
