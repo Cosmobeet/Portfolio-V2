@@ -43,15 +43,17 @@ h6 {
   text-decoration: underline;
 }
 p {
-  text-align: center;
+  text-align: left;
 }
 ul {
   list-style: none;
-  padding-left: 0;
+  text-align: left;
   li {
     // padding-bottom: 5px;
-    padding: 0.4em;
-    padding-left: 2em;
+    // padding: 0.4em;
+    // padding-left: 2em;
+    // text-align: left;
+    padding: 0.2em;
   }
 }
 
@@ -116,6 +118,13 @@ section {
     }
   }
 }
+.about-text {
+  padding: 0.5em 2.5em;
+}
+.about-skills {
+  padding: 0.5em 0 0.5em 0;
+}
+
 .animated-link {
   a:not(.prev):not(.next) {
     color: #547671;
@@ -311,19 +320,19 @@ footer {
 }
 
 // --- Responsive Changes (Mobile to Tablet/Desktop) ---
-@media (min-width: 500px) {
+@media (min-width: 873px) {
   .wrapper {
     display: flex;
     flex: row;
   }
   .about-text {
     box-sizing: content-box;
-    width: 60%;
+    width: 55%;
     p {
       padding: 2% 8%;
     }
   }
   .about-skills {
-    width: 39%;
+    width: 44%;
   }
 }

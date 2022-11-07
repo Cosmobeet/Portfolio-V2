@@ -47,17 +47,16 @@ h6 {
 }
 
 p {
-  text-align: center;
+  text-align: left;
 }
 
 ul {
   list-style: none;
-  padding-left: 0;
+  text-align: left;
 }
 
 ul li {
-  padding: 0.4em;
-  padding-left: 2em;
+  padding: 0.2em;
 }
 
 .tech-list {
@@ -136,6 +135,14 @@ section table tr,
 section table td {
   margin-left: 2rem;
   padding-left: 100px;
+}
+
+.about-text {
+  padding: 0.5em 2.5em;
+}
+
+.about-skills {
+  padding: 0.5em 0 0.5em 0;
 }
 
 .animated-link a:not(.prev):not(.next) {
@@ -355,7 +362,7 @@ footer .socials a:hover:nth-child(3) {
   color: white;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 873px) {
   .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -367,13 +374,13 @@ footer .socials a:hover:nth-child(3) {
   .about-text {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
-    width: 60%;
+    width: 55%;
   }
   .about-text p {
     padding: 2% 8%;
   }
   .about-skills {
-    width: 39%;
+    width: 44%;
   }
 }
 /*# sourceMappingURL=style.css.map */
