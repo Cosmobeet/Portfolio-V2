@@ -48,6 +48,8 @@ h6 {
 
 p {
   text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
@@ -137,12 +139,12 @@ section table td {
   padding-left: 100px;
 }
 
-.about-text {
-  padding: 0.5em 2.5em;
+.wrapper {
+  padding: 1em 1.5em;
 }
 
-.about-skills {
-  padding: 0.5em 0 0.5em 0;
+.about-text {
+  padding: 0.5em 1em;
 }
 
 .animated-link a:not(.prev):not(.next) {
@@ -370,6 +372,7 @@ footer .socials a:hover:nth-child(3) {
     -webkit-box-flex: row;
         -ms-flex: row;
             flex: row;
+    padding: 1em 1.5em;
   }
   .about-text {
     -webkit-box-sizing: content-box;

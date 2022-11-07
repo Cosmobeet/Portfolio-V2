@@ -44,6 +44,8 @@ h6 {
 }
 p {
   text-align: left;
+  padding: 0;
+  margin: 0;
 }
 ul {
   list-style: none;
@@ -118,11 +120,11 @@ section {
     }
   }
 }
-.about-text {
-  padding: 0.5em 2.5em;
+.wrapper {
+  padding: 1em 1.5em;
 }
-.about-skills {
-  padding: 0.5em 0 0.5em 0;
+.about-text {
+  padding: 0.5em 1em;
 }
 
 .animated-link {
@@ -324,6 +326,7 @@ footer {
   .wrapper {
     display: flex;
     flex: row;
+    padding: 1em 1.5em;
   }
   .about-text {
     box-sizing: content-box;
