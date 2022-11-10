@@ -18,7 +18,7 @@ html {
 
 h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 4em;
+  font-size: 2.5em;
   padding-bottom: 0.2em;
 }
 
@@ -48,8 +48,8 @@ h6 {
 
 p {
   text-align: left;
-  padding: 0;
-  margin: 0;
+  padding-left: 2.3em;
+  margin-bottom: 0.5em;
 }
 
 ul {
@@ -99,6 +99,14 @@ ul li {
   padding: 4em;
 }
 
+#home .wrapper {
+  padding: 1em 1.5em;
+}
+
+#home .about-text {
+  padding: 0.5em 1em;
+}
+
 section:not(:first-of-type) {
   border-bottom: 1px solid #ddd9d9;
 }
@@ -137,14 +145,6 @@ section table tr,
 section table td {
   margin-left: 2rem;
   padding-left: 100px;
-}
-
-.wrapper {
-  padding: 1em 1.5em;
-}
-
-.about-text {
-  padding: 0.5em 1em;
 }
 
 .animated-link a:not(.prev):not(.next) {
@@ -365,6 +365,9 @@ footer .socials a:hover:nth-child(3) {
 }
 
 @media (min-width: 873px) {
+  h1 {
+    font-size: 3.2em;
+  }
   .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -378,8 +381,6 @@ footer .socials a:hover:nth-child(3) {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
     width: 55%;
-  }
-  .about-text p {
     padding: 2% 8%;
   }
   .about-skills {

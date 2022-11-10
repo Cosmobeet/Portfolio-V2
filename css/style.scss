@@ -19,7 +19,7 @@ html {
 }
 h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 4em;
+  font-size: 2.5em;
   padding-bottom: 0.2em;
 }
 h2 {
@@ -44,8 +44,8 @@ h6 {
 }
 p {
   text-align: left;
-  padding: 0;
-  margin: 0;
+  padding-left: 2.3em;
+  margin-bottom: 0.5em;
 }
 ul {
   list-style: none;
@@ -87,6 +87,12 @@ ul {
     padding: 4em;
   }
   // margin: auto;
+  .wrapper {
+    padding: 1em 1.5em;
+  }
+  .about-text {
+    padding: 0.5em 1em;
+  }
 }
 section {
   &:not(:first-of-type) {
@@ -120,13 +126,6 @@ section {
     }
   }
 }
-.wrapper {
-  padding: 1em 1.5em;
-}
-.about-text {
-  padding: 0.5em 1em;
-}
-
 .animated-link {
   a:not(.prev):not(.next) {
     color: #547671;
@@ -322,7 +321,11 @@ footer {
 }
 
 // --- Responsive Changes (Mobile to Tablet/Desktop) ---
+
 @media (min-width: 873px) {
+  h1 {
+    font-size: 3.2em;
+  }
   .wrapper {
     display: flex;
     flex: row;
@@ -331,9 +334,7 @@ footer {
   .about-text {
     box-sizing: content-box;
     width: 55%;
-    p {
-      padding: 2% 8%;
-    }
+    padding: 2% 8%;
   }
   .about-skills {
     width: 44%;
