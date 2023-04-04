@@ -46,8 +46,9 @@ ul {
 }
 ul li {
   padding-bottom: 5px;
-  padding: 0.4em;
-  padding-left: 2em;
+  /* padding: 0.4em; */
+  /* padding-left: 2em; */
+  padding: 0.5em 1.5em;
 }
 .card {
   border: 1px solid gray;
