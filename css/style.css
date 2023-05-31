@@ -372,7 +372,7 @@ footer .socials a:hover:nth-child(3) {
   color: white;
 }
 
-@media (min-width: 873px) {
+@media (max-width: 873px) {
   h1 {
     font-size: 3.2em;
   }
@@ -393,6 +393,12 @@ footer .socials a:hover:nth-child(3) {
   }
   .about-skills {
     width: 44%;
+  }
+}
+
+@media (max-width: 500px) {
+  section:nth-child(6) {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

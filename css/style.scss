@@ -119,9 +119,6 @@ section {
 
   table {
     box-sizing: content-box;
-    // margin-left: 1rem;
-    // margin-right: 1rem;
-    // width: 100%;
     a {
       color: blue;
     }
@@ -329,7 +326,7 @@ footer {
 
 // --- Responsive Changes (Mobile to Tablet/Desktop) ---
 
-@media (min-width: 873px) {
+@media (max-width: 873px) {
   h1 {
     font-size: 3.2em;
   }
@@ -345,5 +342,13 @@ footer {
   }
   .about-skills {
     width: 44%;
+  }
+}
+
+@media (max-width: 500px) {
+  section {
+    &:nth-child(6) {
+      padding: 0;
+    }
   }
 }
