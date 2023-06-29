@@ -45,15 +45,15 @@ h4 {
   font-weight: 500;
 }
 
-h6 {
-  font-weight: bold;
-  text-decoration: underline;
-}
-
 p {
   text-align: left;
   padding-left: 2.3em;
   margin-bottom: 0.5em;
+}
+
+.li-header {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 ul {
@@ -105,10 +105,6 @@ ul li {
 
 #home .wrapper {
   padding: 1em 1.5em;
-}
-
-#home .about-text {
-  padding: 0.5em 1em;
 }
 
 section:not(:first-of-type) {
