@@ -106,9 +106,9 @@ ul {
   }
 }
 section {
-  &:not(:first-of-type) {
-    border-bottom: 1px solid rgb(221, 217, 217);
-  }
+  // &:not(:first-of-type) {
+  //   border-bottom: 1px solid rgb(221, 217, 217);
+  // }
   .work-links {
     display: flex;
     flex-direction: row;
@@ -133,6 +133,11 @@ section {
       padding-left: 100px;
     }
   }
+}
+hr {
+  width: 93%;
+  margin: auto;
+  color: rgb(95, 95, 95);
 }
 .animated-link {
   a:not(.prev):not(.next) {

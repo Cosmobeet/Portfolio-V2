@@ -101,9 +101,6 @@ ul li {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-section:not(:first-of-type) {
-  border-bottom: 1px solid rgb(221, 217, 217);
-}
 section .work-links {
   display: flex;
   flex-direction: row;
@@ -111,7 +108,7 @@ section .work-links {
   align-items: center;
   text-align: center;
 }
-section:nth-child(2n+1) {
+section:nth-of-type(2n + 1) {
   background-color: #f9f9f9;
 }
 section table {
@@ -124,6 +121,12 @@ section table tr,
 section table td {
   margin-left: 2rem;
   padding-left: 100px;
+}
+
+hr {
+  width: 93%;
+  margin: auto;
+  color: rgb(95, 95, 95);
 }
 
 .animated-link a:not(.prev):not(.next) {
