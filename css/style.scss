@@ -27,9 +27,7 @@ h1 {
   padding-bottom: 0.2em;
 }
 h2 {
-  padding: 2rem 0;
-  padding-left: 2em;
-  padding-bottom: 0.2em;
+  margin: 0 0 0.2em 1em;
   text-decoration: underline;
 }
 h3 {
@@ -39,7 +37,7 @@ h3 {
 h4 {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  padding: 1em;
+  margin: 1.4em;
   font-weight: 500;
 }
 p {
@@ -106,9 +104,10 @@ ul {
   }
 }
 section {
-  // &:not(:first-of-type) {
-  //   border-bottom: 1px solid rgb(221, 217, 217);
-  // }
+  &:not(:first-of-type) {
+    // border-bottom: 1px solid rgb(221, 217, 217);
+    margin: 50px;
+  }
   .work-links {
     display: flex;
     flex-direction: row;
