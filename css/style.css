@@ -265,31 +265,16 @@ footer {
   font-size: 13px;
   padding: 1em;
 }
-footer .link-name {
-  display: none;
-  text-decoration: none;
-  padding: 5em;
-}
 footer .socials {
   padding: 0 0 0.6em 0.6em;
 }
 footer .socials a {
   background-color: white;
   border-radius: 35%;
-  color: #39395f;
-  padding: 1em 0.5em 0.2em 0.5em;
+  color: black;
+  background-color: #547671;
+  padding: 1.2em 0.5em 0.2em 0.5em;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-footer .socials a:hover {
-  background-color: black;
-  border-radius: 10px;
-  color: #547671;
-}
-footer .socials a:hover .link-name {
-  color: white;
-  display: inline;
-  padding: 1.5em;
-  text-align: center;
 }
 footer .socials a:hover:nth-child(1) {
   background-color: black;
@@ -300,8 +285,8 @@ footer .socials a:hover:nth-child(2) {
   color: white;
 }
 footer .socials a:hover:nth-child(3) {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 @media (max-width: 1000px) {
